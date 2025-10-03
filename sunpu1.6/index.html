@@ -48,7 +48,7 @@
 		
 		viewer.setEDLEnabled(true);
 		viewer.setFOV(60);
-		viewer.setPointBudget(1*1000*1000);
+							viewer.setPointBudget(5_000_000);//rendering数の初期値
 		document.title = "";
 		viewer.setEDLEnabled(false);
 		viewer.setBackground("gradient"); // ["skybox", "gradient", "black", "white"];
@@ -56,12 +56,13 @@
 		viewer.loadSettingsFromURL();
 		
 		viewer.loadGUI(() => {
-			viewer.setLanguage('en');
+			viewer.setLanguage('jp');
 			$("#menu_appearance").next().show();
 			$("#menu_tools").next().show();
 			$("#navigation").hide();
 			$("#menu_scene").next().show();
 			viewer.toggleSidebar();
+			$("#sldPointBudget").slider({ min: 1000000 }); //点群rendering数の下限
 		});
 		
 		Potree.loadPointCloud("pointclouds/index/cloud.js", "index", e => {
