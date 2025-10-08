@@ -59,6 +59,10 @@
 			$("#menu_classification").hide();
 			viewer.toggleSidebar();
 			$("#sldPointBudget").slider({ min: 1000000 }); //点群rendering数の下限
+			// 不要な機能を非表示にする                        
+			$("#sldFOV").closest("li").hide();
+			$("#show_bounding_box").closest("li").hide();
+			$("#set_freeze").closest("li").hide();                        
 		});
 		
 		Potree.loadPointCloud("pointclouds/index/cloud.js", "index", e => {
