@@ -24,15 +24,15 @@
 				<li><span data-i18n="appearance.nb_max_pts"></span>: <span id="lblPointBudget"></span> <div id="sldPointBudget"></div></li>
 				<li><span data-i18n="appearance.field_view"></span>: <span id="lblFOV"></span><div id="sldFOV"></div></li>
 
-				<div class="divider"><span>Eye-Dome-Lighting</span></div>
+				<div class="divider" style="display: none"><span>Eye-Dome-Lighting</span></div>
 
-				<li><label><input type="checkbox" id="chkEDLEnabled"/><span data-i18n="appearance.edl_enable"></span></label></li>
-				<li><span data-i18n="appearance.edl_radius"></span>: <span id="lblEDLRadius"></span><div id="sldEDLRadius"></div></li>
-				<li><span data-i18n="appearance.edl_strength"></span>: <span id="lblEDLStrength"></span><div id="sldEDLStrength"></div></li>
+				<li style="display: none"><label><input type="checkbox" id="chkEDLEnabled"/><span data-i18n="appearance.edl_enable"></span></label></li>
+				<li style="display: none"><span data-i18n="appearance.edl_radius"></span>: <span id="lblEDLRadius"></span><div id="sldEDLRadius"></div></li>
+				<li style="display: none"><span data-i18n="appearance.edl_strength"></span>: <span id="lblEDLStrength"></span><div id="sldEDLStrength"></div></li>
 				
-				<div class="divider"><span>Background</span></div>
+				<div class="divider" style="display: none"><span>Background</span></div>
 
-				<li>
+				<li style="display: none">
 					<selectgroup id="background_options">
 						<option id="background_options_skybox" value="skybox">Skybox</option>
 						<option id="background_options_gradient" value="gradient">Gradient</option>
@@ -90,29 +90,11 @@
 
 			<li id="navigation"></li>
 
-			<li><span data-i18n="appearance.move_speed"></span>: <span id="lblMoveSpeed"></span><div id="sldMoveSpeed"></div></li>
+			
 		</div>
 
-		<!-- SCENE -->
-		<h3 id="menu_scene"><span data-i18n="tb.scene_opt"></span></h3>
-		<div class="pv-menu-list">
-
-			<div id="scene_export"></div>
-
-			<div class="divider" style="padding: 10px 0px 15px 0px"><span>Objects</span></div>
-
-			<div id="scene_objects"></div>
-
-			<div class="divider" style="padding: 10px 0px 15px 0px"><span>Properties</span></div>
-
-			<div id="scene_object_properties"></div>
-		</div>
-
-		<!-- Classification -->
-		<h3 id="menu_classification"><span data-i18n="tb.classification_filter_opt"></span></h3>
-		<div>
-			<ul id="classificationList" class="pv-menu-list"></ul>
-		</div>
+		
+		
 		
 		<!-- ABOUT -->
 		<h3 id="menu_about"><span data-i18n="tb.about_opt"></span></h3>
