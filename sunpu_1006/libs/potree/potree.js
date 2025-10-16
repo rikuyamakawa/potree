@@ -22547,11 +22547,13 @@ initSidebar = (viewer) => {
 
 
 		
+/*
 		elNavigation.append(createToolIcon(
 			Potree.resourcePath + "/icons/navigation_cube.svg",
 			"[title]tt.navigation_cube_control",
 			function(){viewer.toggleNavigationCube()}
 		));
+*/
 
 		elNavigation.append("<br>");
 
@@ -22596,13 +22598,12 @@ initSidebar = (viewer) => {
 
 
 
-		let elCameraProjection = $(`
-			<selectgroup id="camera_projection_options">
-				<option id="camera_projection_options_perspective" value="PERSPECTIVE">Perspective</option>
-				<option id="camera_projection_options_orthigraphic" value="ORTHOGRAPHIC">Orthographic</option>
-			</selectgroup>
-		`);
-		elNavigation.append(elCameraProjection);
+				                let elCameraProjection = $(`
+							<selectgroup id="camera_projection_options" style="display: none">
+								<option id="camera_projection_options_perspective" value="PERSPECTIVE">Perspective</option>
+								<option id="camera_projection_options_orthigraphic" value="ORTHOGRAPHIC">Orthographic</option>
+							</selectgroup>
+						`);		elNavigation.append(elCameraProjection);
 		elCameraProjection.selectgroup({title: "Camera Projection"});
 		elCameraProjection.find("input").click( (e) => {
 			viewer.setCameraMode(Potree.CameraMode[e.target.value]);

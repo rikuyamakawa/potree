@@ -56,11 +56,14 @@
 		viewer.loadSettingsFromURL();
 		
 		viewer.loadGUI(() => {
-			viewer.setLanguage('en');
+			viewer.setLanguage('jp');
 			$("#menu_appearance").next().show();
 			$("#menu_tools").next().show();
-			$("#menu_scene").next().show();
+			
 			viewer.toggleSidebar();
+			$("#sldFOV").closest("li").hide();
+			$("#show_bounding_box").closest("li").hide();
+			$("#set_freeze").closest("li").hide();
 		});
 		
 		Potree.loadPointCloud("pointclouds/index/cloud.js", "index", e => {
