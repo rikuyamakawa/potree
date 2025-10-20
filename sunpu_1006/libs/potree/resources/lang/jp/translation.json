@@ -27,9 +27,9 @@
         "front_view_control": "前から見る",
         "top_view_control": "上から見る",
         "focus_control": "全体表示",
-        "orbit_control": " 軌道制御",
+        "orbit_control": " 回転",
         "flight_control": "一人称視点",
-        "earth_control": "地球"
+        "earth_control": "平行移動"
     },
     "appearance": {
         "nb_max_pts": "点の数", 
@@ -38,6 +38,9 @@
         "field_view": "視野",
         "point_size_type": "点タイプ設定",
         "point_material": "点の材質",
+        "splat_quality": "点の品質",
+        "standard": "標準",
+        "high_quality": "高品質",
         "elevation_range": "Plage altimétrique",
         "point_quality": "品質",
         "edl_radius": "点群の半径",

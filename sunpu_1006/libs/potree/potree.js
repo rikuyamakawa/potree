@@ -823,6 +823,7 @@ Potree.XHRFactory = {
 			let rootID = elGroup.prop("id");
 			let groupID = `${rootID}`;
 			let groupTitle = (args.title !== undefined) ? args.title : "";
+			let groupTitleKey = (args.i18n !== undefined) ? args.i18n : "";
 
 			let elButtons = [];
 			elGroup.find("option").each((index, value) => {
@@ -854,7 +855,7 @@ Potree.XHRFactory = {
 
 			let elFieldset = $(`
 				<fieldset style="border: none; margin: 0px; padding: 0px">
-					<legend>${groupTitle}</legend>
+					<legend data-i18n="${groupTitleKey}">${groupTitle}</legend>
 					<span style="display: flex">
 
 					</span>
@@ -22614,7 +22615,7 @@ initSidebar = (viewer) => {
 
 		{
 			let elSplatQuality = $("#splat_quality_options");
-			elSplatQuality.selectgroup({title: "Splat Quality"});
+			elSplatQuality.selectgroup({title: "Splat Quality", i18n: "appearance.splat_quality"});
 
 			function isMobileDevice() {
 				return /Mobi|Android/i.test(navigator.userAgent);
