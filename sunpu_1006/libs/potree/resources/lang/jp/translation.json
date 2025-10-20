@@ -26,7 +26,7 @@
         "top_view_control": "上から見る",
         "focus_control": "全体表示",
         "orbit_control": " 軌道制御",
-        "flight_control": "Vol",
+        "flight_control": "一人称視点",
         "earth_control": "地球"
     },
     "appearance": {
