@@ -48,7 +48,8 @@
 		
 		viewer.setEDLEnabled(true);
 		viewer.setFOV(60);
-		viewer.setPointBudget(1*1000*1000);
+
+		viewer.setPointBudget(5_000_000);
 		document.title = "";
 		viewer.setEDLEnabled(false);
 		viewer.setBackground("gradient"); // ["skybox", "gradient", "black", "white"];
@@ -61,6 +62,8 @@
 			$("#menu_tools").next().show();
 			
 			viewer.toggleSidebar();
+			$("#sldPointBudget").slider({ min: 1000000 }); //点群rendering数の下限
+			$("#sldPointBudget").slider({ max: 10000000 });
 			$("#sldFOV").closest("li").hide();
 			$("#show_bounding_box").closest("li").hide();
 			$("#set_freeze").closest("li").hide();
