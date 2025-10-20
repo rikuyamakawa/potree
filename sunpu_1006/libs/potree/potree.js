@@ -22616,6 +22616,16 @@ initSidebar = (viewer) => {
 			let elSplatQuality = $("#splat_quality_options");
 			elSplatQuality.selectgroup({title: "Splat Quality"});
 
+			function isMobileDevice() {
+				return /Mobi|Android/i.test(navigator.userAgent);
+			}
+
+			if (isMobileDevice()) {
+				viewer.useHQ = false; // Standard for mobile
+			} else {
+				viewer.useHQ = true; // HQ for PC
+			}
+
 			elSplatQuality.find("input").click( (e) => {
 				if(e.target.value === "standard"){
 					viewer.useHQ = false;
