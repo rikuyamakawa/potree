@@ -32,7 +32,7 @@
         "earth_control": "地球"
     },
     "appearance": {
-        "nb_max_pts": "表示するポイント数を設定", 
+        "nb_max_pts": "点群の数", 
         "point_size": "点サイズを設定",
         "point_opacity": "不透明度",
         "field_view": "視野",
@@ -43,7 +43,7 @@
         "edl_radius": "点群の半径",
         "edl_strength": "点群の強度",
         "edl_enable": "アクティブにする",
-        "min_node_size": "最小ノードサイズ",
+        "min_node_size": "点の大きさ",
         "clip_mode": "クリップモード",
         "move_speed": "動く速度",
         "skybox": "空",
