@@ -59,23 +59,41 @@
 			$("#menu_classification").hide();
 			viewer.toggleSidebar();
 			$("#sldPointBudget").slider({ min: 1000000 }); //点群rendering数の下限
+			$("#sldPointBudget").slider({ max: 20000000 });
 			// 不要な機能を非表示にする                        
 			$("#sldFOV").closest("li").hide();
 			$("#show_bounding_box").closest("li").hide();
 			$("#set_freeze").closest("li").hide();                        
 		});
 		
-		Potree.loadPointCloud("pointclouds/index/cloud.js", "index", e => {
-			let pointcloud = e.pointcloud;
-			let material = pointcloud.material;
-			viewer.scene.addPointCloud(pointcloud);
-			material.pointColorType = Potree.PointColorType.RGB; // any Potree.PointColorType.XXXX 
-			material.size = 1;
-			material.pointSizeType = Potree.PointSizeType.ADAPTIVE;
-			material.shape = Potree.PointShape.SQUARE;
-			viewer.fitToScreen();
-		});
-		
+							//点群１
+							Potree.loadPointCloud("pointclouds/index/cloud.js", "index", e => {
+								let pointcloud = e.pointcloud;
+								let material = pointcloud.material;
+								viewer.scene.addPointCloud(pointcloud);
+								material.pointColorType = Potree.PointColorType.RGB; // any Potree.PointColorType.XXXX 
+							material.size = 0.5;
+							material.pointSizeType = Potree.PointSizeType.ADAPTIVE;
+							material.shape = Potree.PointShape.SQUARE;
+							viewer.fitToScreen();
+						});
+
+							//点群２
+							Potree.loadPointCloud("../sunpu_1006/pointclouds/index/cloud.js", "sunpu_1006", e => {
+								let pointcloud2 = e.pointcloud;
+								let material2 = pointcloud2.material;
+								viewer.scene.addPointCloud(pointcloud2);
+
+
+								material2.pointColorType = Potree.PointColorType.ELEVATION; // 色区別用
+								material2.size = 0.5;
+								material2.pointSizeType = Potree.PointSizeType.ADAPTIVE;
+								material2.shape = Potree.PointShape.SQUARE;
+
+
+								pointcloud2.position.set(10680.1305, 113143.5425, -20.8205);
+								// 位置がかぶるならここを調整
+							});
 	</script>
 	
 	
