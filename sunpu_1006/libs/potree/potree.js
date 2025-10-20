@@ -22457,7 +22457,7 @@ initSidebar = (viewer) => {
 		));
 
 		elNavigation.append(createToolIcon(
-			Potree.resourcePath + '/icons/fps_controls.svg',
+			Potree.resourcePath + '/icons/eye_icon.png',
 			'[title]tt.flight_control',
 			function () {
 				viewer.setNavigationMode(Potree.FirstPersonControls);

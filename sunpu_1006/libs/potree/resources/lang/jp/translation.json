@@ -9,7 +9,9 @@
         "scene_opt": "シーン",
         "classification_filter_opt": "フィルター分類",
         "parameters_opt": "その他の設定",
-        "about_opt": "協力"
+        "about_opt": "協力",
+		"measurement_opt": "測定",
+		"navigation_section": "ナビゲーション"
     },
     "tt": {
         "angle_measurement": "角度測定",
