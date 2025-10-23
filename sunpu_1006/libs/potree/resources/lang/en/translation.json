@@ -10,7 +10,9 @@
 		"scene_opt": "Scene",
 		"classification_filter_opt": "Classification filter",
 		"parameters_opt": "Other settings",
-		"about_opt": "About"
+		"about_opt": "About",
+		"measurement_opt": "Measurement",
+		"navigation_section": "Navigation"
 	},
 	"tt": {
 		"angle_measurement": "Angle measurement",
