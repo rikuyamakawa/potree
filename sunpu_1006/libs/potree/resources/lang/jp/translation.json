@@ -24,14 +24,17 @@
         "clip_volume": "クリッピングボリューム",
         "remove_all_measurement": "クリア",
         "left_view_control": "左から見る",
+        "right_view_control": "右から見る",
         "front_view_control": "前から見る",
+        "back_view_control": "後ろから見る",
         "top_view_control": "上から見る",
+        "bottom_view_control": "下から見る",
         "focus_control": "全体表示",
         "orbit_control": " 回転",
         "flight_control": "一人称視点",
-        "earth_control": "平行移動"
-    },
-    "appearance": {
+        		"earth_control": "平行移動",
+        		"reset_view": "デフォルトに戻す"
+            },    "appearance": {
         "nb_max_pts": "点の数", 
         "point_size": "点サイズを設定",
         "point_opacity": "不透明度",

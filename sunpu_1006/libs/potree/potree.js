@@ -22494,11 +22494,9 @@ initSidebar = (viewer) => {
 
 		let resetIcon = createToolIcon(
 			Potree.resourcePath + '/icons/cansel.png',
-			'デフォルトに戻す',
+			'[title]tt.reset_view',
 			function () { viewer.setNavigationMode(Potree.OrbitControls); }
 		);
-		resetIcon.removeAttr('data-i18n');
-		resetIcon.attr('title', 'デフォルトに戻す');
 		elNavigation.append(resetIcon);
 
 
@@ -22615,7 +22613,7 @@ initSidebar = (viewer) => {
 
 		{
 			let elSplatQuality = $("#splat_quality_options");
-			elSplatQuality.selectgroup({title: "Splat Quality", i18n: "appearance.splat_quality"});
+			elSplatQuality.selectgroup({i18n: "appearance.splat_quality"});
 
 			function isMobileDevice() {
 				return /Mobi|Android/i.test(navigator.userAgent);
