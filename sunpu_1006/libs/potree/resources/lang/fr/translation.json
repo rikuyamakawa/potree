@@ -8,8 +8,9 @@
         "scene_opt": "Scène",
         "classification_filter_opt": "Filtre de classification",
         "parameters_opt": "Autres paramètres",
-        "about_opt": "À propos"
-    },
+        		"about_opt": "À propos",
+        		"measurement_opt": "Mesure",
+                "navigation_section": "Navigation"    },
     "tt": {
         "angle_measurement": "Mesurer un angle",
         "distance_measurement": "Mesurer une distance",
@@ -24,8 +25,8 @@
         "focus_control": "Vue complète",
         "orbit_control": "Orbite",
         "flight_control": "Vol",
-        "earth_control": "Earth"
-    },
+        		"earth_control": "Earth",
+        		"reset_view": "Réinitialiser la vue"    },
     "appearance": {
         "nb_max_pts": "Nb points max", 
         "point_size": "Taille des points",
@@ -34,8 +35,10 @@
         "point_size_type": "Type de taille",
         "point_material": "Matériaux",
         "elevation_range": "Plage altimétrique",
-        "point_quality": "Qualité",
-        "edl_radius": "Rayon",
+        		"point_quality": "Qualité",
+        		"splat_quality": "Qualité d'affichage",
+        		"standard": "Standard",
+        		"high_quality": "Haute qualité",        "edl_radius": "Rayon",
         "edl_strength": "Intensité",
         "edl_enable": "Activer",
         "min_node_size": "Taille minimum des noeuds",

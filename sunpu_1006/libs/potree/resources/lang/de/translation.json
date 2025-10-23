@@ -9,8 +9,9 @@
         "scene_opt": "Szene",
         "classification_filter_opt": "Klassifizierung  Filter",
         "parameters_opt": "Weitere Einstellungen",
-        "about_opt": "Über Potree"
-    },
+        		"about_opt": "Über Potree",
+        		"measurement_opt": "Messung",
+                "navigation_section": "Navigation"    },
     "tt": {
         "angle_measurement": "Winkelmessung",
         "distance_measurement": "Abstandsmessung",
@@ -33,8 +34,8 @@
         "perspective_camera_control": "Perspektivische Kamera",
         "orthographic_camera_control": "Orthografische Kamera",
         "navigation_cube_control": "Navigationswürfel",
-        "remove_all_clipping_volumes": "Alle Clipvolumen entfernen"
-    },
+        		"remove_all_clipping_volumes": "Alle Clipvolumen entfernen",
+        		"reset_view": "Ansicht zurücksetzen"    },
     "appearance": {
         "nb_max_pts": "Max Punkte", 
         "point_size": "Punktgrösse",
@@ -43,8 +44,10 @@
         "point_size_type": "Punktgrösse",
         "point_material": "Materials",
         "elevation_range": "Elevation Bereich",
-        "point_quality": "Qualität",
-		"point_shape": "Form",
+        		"point_quality": "Qualität",
+        		"splat_quality": "Anzeigequalität",
+        		"standard": "Standard",
+        		"high_quality": "Hohe Qualität",		"point_shape": "Form",
         "edl_radius": "Radius",
         "edl_strength": "Stärke",
         "edl_enable": "Ein",
