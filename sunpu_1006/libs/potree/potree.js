@@ -22622,6 +22622,7 @@ initSidebar = (viewer) => {
 			}
 
 			if (isMobileDevice()) {
+				document.body.classList.add('mobile-device');
 				viewer.useHQ = false; // Standard for mobile
 			} else {
 				viewer.useHQ = true; // HQ for PC
