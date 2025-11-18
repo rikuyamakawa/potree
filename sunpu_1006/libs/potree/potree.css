@@ -693,3 +693,10 @@ body{
 .mobile-device #splat_quality_options {
   display: none;
 }
+@media screen and(max-width: 768px) {
+	.potree_menu_toggle {
+		left: 10px;
+		top: 10px;
+		margin: 0;
+	}
+}
